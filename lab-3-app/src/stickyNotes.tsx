@@ -55,6 +55,7 @@ export const StickyNotes = () => {
          <select
            onChange={(event) =>
              setCreateNote({ ...createNote, label: event.target.value as Label})}
+             data-testid="label"
            required>
            <option value={Label.personal}>Personal</option>
            <option value={Label.study}>Study</option>
